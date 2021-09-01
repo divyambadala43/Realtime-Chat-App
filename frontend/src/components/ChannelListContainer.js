@@ -34,6 +34,11 @@ function ChannelListContainer() {
       <div className='channel-list__list__wrapper'>
         <CompanyHeader />
         <ChannelSearch />
+        <ChannelList
+          filters={{}}
+          ChannelRenderFilterFn={() => {}}
+          List={(listProps) => <TeamChannelList {...listProps} type='team' />}
+        />
       </div>
     </React.Fragment>
   );
