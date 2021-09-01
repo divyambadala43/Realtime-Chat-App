@@ -1,6 +1,6 @@
 import React from "react";
 import { ChannelList, useChatContext } from "stream-chat-react";
-import { ChannelSeach, TeamChannelList, TeamChannelPreview } from "./";
+import { ChannelSearch, TeamChannelList, TeamChannelPreview } from "./";
 import HospitalIcon from "../assets/hospital.png";
 import LogoutIcon from "../assets/logout.png";
 
@@ -33,6 +33,7 @@ function ChannelListContainer() {
       <Sidebar />
       <div className='channel-list__list__wrapper'>
         <CompanyHeader />
+        <ChannelSearch />
       </div>
     </React.Fragment>
   );
